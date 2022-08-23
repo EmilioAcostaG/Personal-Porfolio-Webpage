@@ -112,16 +112,32 @@ section p {
 
 
 .project {
-    border-style: solid;
+    border-style: dashed;
     border-width: 2px;
-    margin-left: 3%;
-    position: relative;
+   
+    margin: 1em;
    
 }
 
 .project img {
-    width: 30em;
+    width: 25em;
     height: auto;
+    justify-items: center;
+    align-self: center;
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+
+.project img:hover  {
+    opacity: 0.5;
+
+}
+
+
+.project div:hover {
+    opacity: 1;
 }
 
 .text-block {
@@ -131,9 +147,17 @@ section p {
     background-color: #313131;
     color: white;
     font-size: 2em;
-    padding: 1em;
+    padding: .5em;
+    transition: .5s ease;
 }
 
+
+/*.text-block {
+    background-color: black;
+    color: white;
+    font-size: 1em;
+    padding: 1em 2em;
+}*/
 
 
 .contact-me ul{
